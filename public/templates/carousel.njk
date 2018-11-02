@@ -1,0 +1,7 @@
+{% block content %}
+    <ul class="slides">
+       {% for s in slides %}
+        <li><img alt="Exterior Front" height="220" src="images/500/{{s.file}}" width="500"></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

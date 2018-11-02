@@ -1,0 +1,294 @@
+/* Table of Contents
+==================================================
+01. RETINA STYLES
+02. BASE STYLES (1140px)
+03. #DESKTOP (960px)
+04. #Tablet (Portrait)
+05. #Mobile (Portrait)
+*/
+
+
+/*
+=============================================== 01. RETINA STYLES ===============================================
+*/
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	body nav select {background:#FAFAFA url(../images/select-arrow@2x.png) center right no-repeat; background-size:contain;}
+}
+/* IE7-IE8 Fixes*/
+.lt-ie9	body nav select {background: url(../images/select-arrow.png) center right no-repeat;}
+
+
+/*
+=============================================== 02. BASE STYLES (1140px) ===============================================
+*/
+/* Note: Design for a width of 1040px */
+html {-webkit-text-size-adjust: none;}	/* Removes webkit font resizing */ 
+body {max-width:100%; width:100%;}
+img {max-width:100%; height: auto; }
+.width-container {-moz-transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+
+
+/*
+=============================================== 03. #DESKTOP (960px) ===============================================
+*/
+/* Note: Design for a width of 960px */
+@media only screen and (min-width: 959px) and (max-width: 1280px) {
+	
+.width-container {width:90%;} /* Default Width */
+body { font-size:15px; }
+
+/* Slider Fixes */
+.flex-direction-nav .flex-next { right:15px; }
+.flex-direction-nav .flex-prev { left:15px; }
+.slider-address-container {
+	padding:35px 30px 23px 30px;
+	font-size:18px;
+	margin-top:0px;
+	margin-bottom:10px;
+	min-width:220px;
+}
+
+.slider-address-pro, .slider-bedroom-pro, .slider-additional-pro { margin-bottom:12px; }
+.slider-price-pro {
+	font-size:22px;
+	margin-top:3px;
+	margin-bottom:12px;
+}
+.slider-bedroom-pro, .slider-additional-pro { font-size:15px; }
+header a.slider-button-pro { font-size:13px; min-width:220px; padding:22px 30px;  }
+
+#uncrop-image-pro img { max-height:575px; }
+
+
+/* Header Styles */
+.sf-menu a { margin-right:16px; margin-left:16px; }
+
+/* FONT Sizes */
+h1, #page-title h1 {font-size:28px; margin-bottom:35px;}
+#page-title h1 { margin-bottom:7px; }
+h2 {font-size:25px; margin-bottom:30px; }
+h3 {font-size:20px; }
+h4  {font-size:18px; }
+h5  {font-size:16px;  }
+h6 {font-size:14px; }
+ul#bread-crumb { font-size:13px; }
+
+a.slider-button-pro, body #main .width-container #respond input#submit, 
+body a.progression-button, body input.wpcf7-submit, body input#submit, body a.ls-sc-button.default {
+	padding:19px 26px;
+	font-size:14px;
+}
+body a.ls-sc-button.secondary, body a.progression-button-secondary { 
+	padding:14px 22px;
+	font-size:14px;
+}
+
+
+}
+
+
+/*
+=============================================== 04. #Tablet (Portrait) ===============================================
+*/
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+/* Default Width */
+.width-container { width:90%; }
+.commentlist {width:68%;}
+body { font-size:14px; }
+
+body .gallery-icon { margin-right:8px; margin-left:8px; }
+body .gallery-caption { left:25px;	padding:7px 12px; font-size:80%; }
+
+
+/* Slider Fixes */
+.flex-direction-nav .flex-next { right:15px; }
+.flex-direction-nav .flex-prev { left:15px;}
+.slider-address-container {
+	padding:25px 20px 15px 20px;
+	font-size:15px;
+	margin-top:0px;
+	margin-bottom:10px;
+	min-width:200px;
+}
+.slider-address-pro, .slider-bedroom-pro, .slider-additional-pro { margin-bottom:8px; }
+
+.slider-price-pro {
+	font-size:22px;
+	margin-top:3px;
+	margin-bottom:12px;
+}
+.slider-bedroom-pro, .slider-additional-pro { font-size:12px; }
+
+header a.slider-button-pro { font-size:10px; min-width:200px; padding:16px 20px;  }
+
+#uncrop-image-pro img { max-height:480px; }
+
+.caption-pro { bottom:125px; padding:20px 25px 0px 25px; }
+
+/* header navigation */
+.sf-menu a { margin-right:11px; margin-left:11px; font-size:13px;  }
+
+
+/* FONT Sizes */
+h1, #page-title h1 {font-size:26px; margin-bottom:30px;}
+#page-title h1 { margin-bottom:6px; }
+h2 {font-size:20px; margin-bottom:26px; }
+h3 {font-size:19px; }
+h4  {font-size:17px; }
+h5  {font-size:15px;  }
+h6 {font-size:13px; }
+ul#bread-crumb { font-size:12px; }
+
+a.slider-button-pro, body #main .width-container #respond input#submit, 
+body a.progression-button, body input.wpcf7-submit, body input#submit, body a.ls-sc-button.default {
+	padding:17px 24px;
+	font-size:13px;
+}
+body a.ls-sc-button.secondary, body a.progression-button-secondary { 
+	padding:12px 20px;
+	font-size:13px;
+}
+
+
+}
+
+
+/*
+=============================================== 05. #Mobile (Portrait) ===============================================
+*/
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+
+/* Default Width */
+.width-container, .flex-caption .slider-container, .home-widget .textwidget { width:92%; }
+body { font-size:13px; }
+
+#uncrop-image-pro img {
+	max-height:180px;
+}
+
+body .gallery-icon { margin-right:5px; margin-left:5px; }
+body .gallery-caption { 
+	font-size:10px; 
+	position:static;
+}
+
+#post-nav-progression a {
+	font-size:12px;
+}
+
+#post-nav-progression .nav-previous span, #post-nav-progression .nav-next span {
+	font-size:10px ;
+}
+
+/* Default Grid */
+.footer-2-column .widget, .footer-3-column .widget, .footer-4-column .widget,
+#sidebar, #content-container, footer .footer-2-column .widget, footer .footer-3-column .widget, footer .footer-4-column .widget,
+.grid2column-progression, .grid3column-progression, .grid3columnbig-progression, .grid4column-progression, .grid4columnbig-progression,
+#sidebar, #content-container {
+	width:100%; margin-bottom:10px;
+}
+
+
+/* Header Text */
+header { min-height:220px; }
+body header h1#logo, body header#logo { float:none; margin:25px auto; text-align:center;}
+body nav { margin:0px 0px 100px 0px; }
+#pro-page-header .slider-float-text { float:none; padding-bottom:0px; margin-top:-75px; margin-bottom:120px; }
+
+#page-title {
+	padding:12px 30px 12px 20px;
+	margin-bottom:-10px;
+}
+
+/* Slider Fixes */
+.slider-float-text { display:none; }
+#slider-mobile-text { display:block; text-align:center;}
+.slider-address-container {
+	padding:20px 15px 10px 15px;
+	font-size:11px;
+	margin-top:0px;
+	margin-bottom:8px;
+	min-width:0px;
+}
+.slider-address-pro, .slider-bedroom-pro, .slider-additional-pro { margin-bottom:6px; }
+
+.slider-price-pro {
+	font-size:16px;
+	margin-top:2px;
+	margin-bottom:8px;
+}
+.slider-bedroom-pro, .slider-additional-pro { font-size:9px; }
+
+#slider-mobile-text a.slider-button-pro { font-size:8px; min-width:0px; padding:16px 15px;  }
+.caption-pro { bottom:80px; padding:12px 16px 0px 16px; }
+.caption-pro p { margin-bottom:12px; }
+.flex-control-nav {display:none !important;}
+
+
+/* Select Menu */
+nav { float:none; padding-bottom:5px;}
+nav ul { display: none;  }  
+nav select option { background:#fff; color:#888;}
+nav select { text-transform:none; display:block;  margin-left:auto; margin-right:auto; width:300px; min-width: 150px; max-width: 100%; -webkit-appearance: none; -moz-appearance: normal; appearance: normal;
+-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-padding-end: 20px; -webkit-padding-start: 2px; -webkit-user-select: none;-moz-user-select: none;
+background-color:#FAFAFA;
+background:#FAFAFA url(../images/select-arrow.png) center right no-repeat;
+font-size:13px;
+border: 1px solid #aaaaaa;
+color: #555555;
+padding:7px 5px 7px 10px;
+}
+
+#map-text-pro  {
+	float:none;
+	width:90%;
+	padding:40px 5%;
+}
+#map-embed-pro {
+	float:none;
+	width:100%;
+}
+body .googlemap { height:200px !important; }
+
+/* BLOG Adjustments */
+.commentlist {width:95%; left:-10px;}
+.commentlist .children li.comment .comment-meta {margin-left:0px;}
+.commentlist .avatar, .commentlist > li:before {display:none;}
+.commentlist .avatar {display:none;}
+
+.wpcf7 input, #respond input {width:70%;}
+.wpcf7 textarea, #respond textarea {width:70%; }
+
+
+/* FONT Sizes */
+h1, #page-title h1 {font-size:20px; margin-bottom:28px;}
+#page-title h1 {margin-bottom:5px;}
+h2 {font-size:19px; margin-bottom:24px; }
+h3 {font-size:18px; }
+h4  {font-size:16px; }
+h5  {font-size:14px;  }
+h6 {font-size:12px; }
+ul#bread-crumb { font-size:11px; }
+
+a.slider-button-pro, body #main .width-container #respond input#submit, 
+body a.progression-button, body input.wpcf7-submit, body input#submit, body a.ls-sc-button.default {
+	padding:15px 22px;
+	font-size:11px;
+}
+body a.ls-sc-button.secondary, body a.progression-button-secondary { 
+	padding:10px 18px;
+	font-size:11px;
+}
+
+.social-ico { font-size:14px; }
+.social-ico a i {padding:10px;}
+
+}

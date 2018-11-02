@@ -1,0 +1,24 @@
+{% block content %}
+
+    {% for i in images %}
+    {% if loop.index0 % 3 == 0 %}
+    <div class='gallery-row gallery-col-3 gallery-clear'>
+    {% endif %}
+        <figure class='gallery-item col-3'>
+            <div class='gallery-icon landscape'>
+                <a href='images/1400/{{i.file}}' data-rel="prettyPhoto">
+                    <img alt="Front Yard"  height="800" src="images/1400/{{i.file}}" width="1400">
+                </a>
+            </div>
+
+            <figcaption class="gallery-caption" id="figcaption-74-92">
+                {{i.name}}
+            </figcaption>
+        </figure>
+    {% if loop.index0 % 3 == 2 %}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    </div>
+{% endblock %}
